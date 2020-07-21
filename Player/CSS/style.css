@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: white;
+    background-color: #1a1a1a;
+    overflow-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+body {
+    /*WICHTIG, WEIL SONST EINE DEFAULT MARGIN DEN HEADER NICHT BIS ZUM RAND LÄSST*/
+    margin: 0; 
+
+}
+
+.site {
+    /*damit man über oder unter der .site-Box 
+    auch einen Header oder Footer über die ganze Breite machen kann*/
+    margin: auto;
+    max-width: 700px;
+}
+
+.site-2 {
+    margin: 8px;
+
+}
+
+/* p (Paragraph) ist bei play.css zu finden, es bei index.php nicht verwendet wird*/
+
+/*Schriftarten*/
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+/*Inhalt*/
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/*INHALT-KLEIN ALS SWIPE*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    /*BUG GELÖST: war vorher auf eine feste px-Zahl festgelegt --> Box wurde oben und unten abgeschnitten*/
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.inhalt-klein {
+    background-color: #262626;
+    position: relative;
+    width: 100%;
+    height: min-content;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inhalt-klein:hover {
+    opacity: 0.9;
+}
+
+.inhalt-klein .descr {
+    padding: 0 0 6px 8px;
+}
+
+
+/*INHALT-MITTEL*/
+
+
+/*INHALT-GROSS*/
+
+
+/*bei pc ansicht anders machen, bild links in normalproprtionen und text rechts daneben*/
+
+.inhalt-gross {
+    background-color: #262626;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inhalt-gross:hover {
+    opacity: 0.9;
+}
+
+.inhalt-gross .descr {
+    padding: 2px 12px 12px 12px;
+}
+
+.inhalt-gross .descr h3 {
+    margin-bottom: 2px;
+}

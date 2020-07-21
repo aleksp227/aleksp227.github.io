@@ -1,0 +1,157 @@
+.thumbnail {
+    position: relative;
+    margin-bottom: 8px;
+    max-width: 100%;
+    padding-top: 56.25%;
+}
+/* https://css-tricks.com/aspect-ratio-boxes/ */
+.thumbnail img {
+    border-radius: 0px; /*weil sonst evtl. die Ecken oben abgerundet werden wie in index.php*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.content{
+    margin-bottom: -4px; /*damit die margin gleich wie auf Audio-Content-Seiten ist (Bsp.: p2.php)*/
+}
+.play-equalizer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#start:hover {
+    opacity: 0.85;
+}
+
+#equalizer {
+    display: none;
+    opacity: .9;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+p{
+    margin-top: 0.6em;
+    margin-bottom: 0.8em;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.line-titel{
+    width: 47px;
+    height: 2px;
+    background-color: red;
+}
+.line-info{
+    width: 41px;
+    height: 2px;
+    background-color: red;
+}
+.line-more_episodes{
+    width: 147px;
+    height: 2px;
+    background-color: red;
+}
+
+
+/*Audioplayer*/
+
+#audio-container {
+    background-color: white;
+    width: 100%;
+    display: none;
+    position: fixed;
+    bottom: 0;
+}
+
+button {
+    border: 0;
+}
+
+.play-pause {
+    float: left;
+    width: 12%;
+    height: 54px;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(0, 136, 169, 1) 100%);
+    cursor: pointer;
+}
+
+#play {
+    display: none;
+}
+
+#repeat {
+    display: none;
+}
+
+.repl{
+    float: left;
+    width: 6%;
+    height: 54px;
+    color: black;
+    background: linear-gradient(0deg, rgba(200, 49, 20, 1) 0%, rgba(248, 80, 50, 1) 100%);
+    cursor: pointer;
+}
+
+.forw{
+    float: left;
+    width: 6%;
+    height: 54px;
+    color: black;
+    background: linear-gradient(0deg, rgba(200, 49, 20, 1) 0%, rgba(248, 80, 50, 1) 100%);
+    cursor: pointer;
+}
+.hide-player {
+    float: left;
+    width: 12%;
+    height: 54px;
+    color: black;
+    background: linear-gradient(0deg, rgba(200, 49, 20, 1) 0%, rgba(248, 80, 50, 1) 100%);
+    cursor: pointer;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+}
+
+audio {
+    float: left;
+    width: 64%;
+}
+
+
+/*Gestaltung des Audioplayers*/
+
+audio::-webkit-media-controls {
+    background-color: white;
+    /*dieselbe Farbe wie unten weil man unten den default border-radius nicht wegmachen kann*/
+}
+
+audio::-webkit-media-controls-panel {
+    border-radius: 0px;
+    background-color: white;
+}
+
+audio::-webkit-media-controls-play-button {
+    display: none;
+}

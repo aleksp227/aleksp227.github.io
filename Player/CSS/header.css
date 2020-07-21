@@ -1,0 +1,128 @@
+header {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color:  red;
+    /*FArbe ändern!!!!!*/
+}
+
+header img {
+    /*GANZ WICHTIG!!! */
+    width: auto;
+    border-radius: 0;
+}
+
+li,
+a,
+button {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-img {
+    margin-left: -30px;
+    margin-right: auto;
+    cursor: pointer;   
+}
+.logo-name{
+    font-size: 22px;
+    margin-right: auto;
+    margin-left: 4px;
+    margin-top: -4px;
+    font-weight: bolder;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/*Standard-Nav*/
+.nav-links {
+    list-style: none;
+    margin-right: -30px;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #0088a9;
+}
+/*Search*/
+
+.hs {
+    padding: 8px 30px;
+    margin-left: 20px;
+    background-color: #0088a9;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.hs:hover {
+    transition: all 0.3s ease 0s;
+    opacity: 0.85;
+    color: #0088a9;
+}
+
+/*Mobile-Nav*/
+.search-button{
+    display: none;
+    cursor: pointer;
+    transform: scale(0.8);
+    margin-bottom: -1px;
+}
+.menu-button {
+    display: none;
+    cursor: pointer;
+    margin-right: -30px;
+}
+
+.mobile-nav {
+    top: 80px;
+    /*HARDCODED!!!!!!!*/
+    width: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.97;
+    display: none;
+}
+
+.menu-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px white solid;
+}
+
+.menu-nav-links li {
+    text-align: center;
+    border: 1px white solid;
+    border-bottom: 0;
+    padding: 30px;
+}
+
+.menu-nav-links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #0088a9;
+}
+
+@media (max-width: 615px) {
+    .nav-links {
+        display: none;
+    }
+    .hs {
+        display: none;
+    }
+    .menu-button {
+        display: inline-block;
+    }
+    .search-button{
+        display: inline-block;
+    }
+}
