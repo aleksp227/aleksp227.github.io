@@ -2,11 +2,11 @@
 
 ### Content
 1. A
-···Lorem ipsum
+⋅⋅⋅Lorem ipsum
 1. B
-···Lorem ipsum
+⋅⋅⋅Lorem ipsum
 ~~1. C
-··· Lorem ipsum~~
+⋅⋅⋅ Lorem ipsum~~
 
 ### Table
 | Tables        | Are           | Cool  |
